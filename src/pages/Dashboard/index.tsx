@@ -37,7 +37,7 @@ const Dashboard: React.FC = () => {
     api.get('providers').then((response) => {
       setProviders(response.data);
     });
-  }, [signOut]);
+  }, []);
 
   const navigateToProfile = useCallback(() => {
     // navigate('Profile');
